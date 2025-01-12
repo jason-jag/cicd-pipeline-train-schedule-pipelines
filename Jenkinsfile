@@ -1,6 +1,6 @@
-pipeline (
+pipeline {
     agent any
-    stages (
+    stages {
         stage ('Build') {
           steps {
             echo 'Running Build Automation'
@@ -8,6 +8,6 @@ pipeline (
             archiveArtifacts artifacts: 'dist/trainSchedule.zip' 
           }
         }
-      )
-  )
+    }
+}
 
